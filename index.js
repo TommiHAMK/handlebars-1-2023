@@ -16,7 +16,7 @@ app.engine('handlebars', exphbs.engine({
 
 app.set('view engine', 'handlebars');
 
-
+app.use(express.static('public'));
 
 app.get('/', (req, res) => {
     //res.send("Testing");
