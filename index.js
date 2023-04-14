@@ -13,11 +13,17 @@ app.set('view engine', 'handlebars');
 
 app.get('/', (req, res) => {
     //res.send("Testing");
-    res.render('index');
+    res.render('index',
+    {
+       pagetitle : "Welcome to our website!" 
+    });
 })
 
 app.get('/about-us', (req, res) => {
-    res.render('about-us');
+    res.render('about-us',
+    {
+        pagetitle: "Our Story"
+    });
 })
 
 
