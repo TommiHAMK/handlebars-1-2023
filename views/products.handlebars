@@ -1,0 +1,18 @@
+<h1>{{pagetitle}}</h1>
+
+{{#if desc}}
+    <p>{{desc}}</p>
+{{else}}
+    <p>No content</p>
+{{/if}}
+
+{{!-- {{products}} --}}
+
+<div class="cards">
+    {{#each products}}
+        <div class="card">
+            <h3>{{this.name}}</h3>
+            <p>Price {{this.price}} €</p>
+        </div>
+    {{/each}}
+</div>
